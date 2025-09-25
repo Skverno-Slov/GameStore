@@ -3,7 +3,7 @@ description: "bug report template for PractWork3"
 title: "[Ошибка]: "
 labels: ["bug"]
 body:
-  - type: textarea
+- type: textarea
     id: reproduction-steps
     attributes:
       label: Шаги воспроизведения
