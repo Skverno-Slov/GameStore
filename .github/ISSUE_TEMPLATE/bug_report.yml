@@ -7,18 +7,34 @@ body:
     id: reproduction-steps
     attributes:
       label: Шаги воспроизведения
-      description: поле для ввда шагов для воспроизведения бага
+      description: Поле для ввда шагов для воспроизведения бага
       placeholder: Введите шаги для воспроизведения бага
     validations:
       required: true 
 - type: textarea
-    id: reproduction-steps
+    id: expected-result
     attributes:
-      label: expected-result
-      description: поле для ввоад ожидаемых результатов
+      label: Ожидаемый результат
+      description: Поле для ввоад ожидаемых результатов
       placeholder: Введите ожидаемый результат
     validations:
       required: true 
+- type: textarea
+    id: actual-result
+    attributes:
+      label: Фактический результат
+      description: Поле для ввоад фактических результатов
+      placeholder: Введите фактический результат
+    validations:
+      required: true 
+- type: textarea
+    id: additional-materials
+    attributes:
+      label: Дополнительные материалы и скриншоты
+      description: Поле для размещения дополнительных материалов 
+      placeholder: разместите дополнительные материалы
+    validations:
+      required: false
 - type: dropdown
     id: идентификатор поля ввода
     attributes:
