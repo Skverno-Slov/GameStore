@@ -4,81 +4,81 @@ title: "[Ошибка]: "
 labels: ["bug"]
 body:
     - type: textarea
-        id: reproduction-steps
-        attributes:
-          label: Шаги воспроизведения
-          description: "Поле для ввда шагов для воспроизведения бага"
-          placeholder: Введите шаги для воспроизведения бага
-        validations:
-          required: true 
+    id: reproduction-steps
+    attributes:
+        label: Шаги воспроизведения
+        description: "Поле для ввда шагов для воспроизведения бага"
+        placeholder: Введите шаги для воспроизведения бага
+    validations:
+        required: true 
     - type: textarea
-        id: expected-result
-        attributes:
-          label: Ожидаемый результат
-          description: "Поле для ввоад ожидаемых результатов"
-          placeholder: Введите ожидаемый результат
-        validations:
-          required: true 
+    id: expected-result
+    attributes:
+        label: Ожидаемый результат
+        description: "Поле для ввоад ожидаемых результатов"
+        placeholder: Введите ожидаемый результат
+    validations:
+        required: true 
     - type: textarea
-        id: actual-result
-        attributes:
-          label: Фактический результат
-          description: "Поле для ввоад фактических результатов"
-          placeholder: Введите фактический результат
-        validations:
-          required: true 
+    id: actual-result
+    attributes:
+        label: Фактический результат
+        description: "Поле для ввоад фактических результатов"
+        placeholder: Введите фактический результат
+    validations:
+        required: true 
     - type: textarea
-        id: additional-materials
-        attributes:
-          label: Дополнительные материалы и скриншоты
-          description: "Поле для размещения дополнительных материалов"
-          placeholder: разместите дополнительные материалы
-        validations:
-          required: false
+    id: additional-materials
+    attributes:
+        label: Дополнительные материалы и скриншоты
+        description: "Поле для размещения дополнительных материалов"
+        placeholder: разместите дополнительные материалы
+    validations:
+        required: false
     - type: dropdown
-        id: runtime
-        attributes:
-          label: Среда выполнения
-          description: "Список сред выполнения программы"
-          options:
-           - Windows 11
-           - Windows 10
-           - MacOS
-           - Unix
-        validations:
-          required: true
+    id: runtime
+    attributes:
+        label: Среда выполнения
+        description: "Список сред выполнения программы"
+        options:
+        - Windows 11
+        - Windows 10
+        - MacOS
+        - Unix
+    validations:
+        required: true
       - type: dropdown
-        id: priority
-        attributes:
-          label: Приоретет
-          description: "Выбор приоретета"
-          options:
-           - Высокий
-           - Средний
-           - Низкий
-        validations:
-          required: true
-        - type: dropdown
-        id: seriousness
-        attributes:
-          label: Серьёзность
-          description: "Выбор серьёзности"
-          options:
-           - Блокирующий
-           - Критический
-           - Существенный
-           - Незначительный
-           - Тривиальный
-        validations:
-          required: true
-      - type: markdown
-        attributes:
-          value: "## Thanks for taking the time to fill out this bug!"
-      - type: checkboxes
-        id: goodbye
-        attributes:
-          label: goodbye
-          description: goodbye
-          options:
-          - label: goodbye
-            required: true 
+    id: priority
+    attributes:
+        label: Приоретет
+        description: "Выбор приоретета"
+        options:
+        - Высокий
+        - Средний
+        - Низкий
+    validations:
+        required: true
+    - type: dropdown
+    id: seriousness
+    attributes:
+        label: Серьёзность
+        description: "Выбор серьёзности"
+        options:
+        - Блокирующий
+        - Критический
+        - Существенный
+        - Незначительный
+        - Тривиальный
+    validations:
+        required: true
+    - type: markdown
+    attributes:
+        value: "## Thanks for taking the time to fill out this bug!"
+    - type: checkboxes
+    id: goodbye
+    attributes:
+        label: goodbye
+        description: goodbye
+        options:
+        - label: goodbye
+        required: true 
