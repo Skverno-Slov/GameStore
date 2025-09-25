@@ -4,13 +4,13 @@ title: "[Ошибка]: "
 labels: ["bug"]
 body:
   - type: textarea
-    id: -
+    id: reproduction-steps
     attributes:
-      label: bug descriptoin
-      description: описание
-      placeholder: подсказка
+      label: Шаги воспроизведения
+      description: поле для ввда шагов для воспроизведения бага
+      placeholder: Введите шаги для воспроизведения бага
     validations:
-      required: true #поле обязательно для заполнения
+      required: true 
 - type: dropdown
     id: идентификатор поля ввода
     attributes:
