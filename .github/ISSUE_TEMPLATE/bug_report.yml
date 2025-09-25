@@ -11,6 +11,14 @@ body:
       placeholder: Введите шаги для воспроизведения бага
     validations:
       required: true 
+- type: textarea
+    id: reproduction-steps
+    attributes:
+      label: expected-result
+      description: поле для ввоад ожидаемых результатов
+      placeholder: Введите ожидаемый результат
+    validations:
+      required: true 
 - type: dropdown
     id: идентификатор поля ввода
     attributes:
