@@ -58,6 +58,19 @@ body:
        - Низкий
     validations:
       required: true
+    - type: dropdown
+    id: seriousness
+    attributes:
+      label: Серьёзность
+      description: Выбор серьёзности
+      options:
+       - Блокирующий
+       - Критический
+       - Существенный
+       - Незначительный
+       - Тривиальный
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: "## Thanks for taking the time to fill out this bug!"
