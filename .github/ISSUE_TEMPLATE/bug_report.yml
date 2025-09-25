@@ -36,24 +36,36 @@ body:
     validations:
       required: false
 - type: dropdown
-    id: идентификатор поля ввода
+    id: runtime
     attributes:
-      label: подпись поля
-      description: описание
+      label: Среда выполнения
+      description: Список сред выполнения программы
       options:
-       - список
-       - опций
+       - Windows 11
+       - Windows 10
+       - MacOS
+       - Unix
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоретет
+      description: Выбор приоретета
+      options:
+       - Высокий
+       - Средний
+       - Низкий
     validations:
       required: true
   - type: markdown
     attributes:
-      value: |
-        Отобразить текст с разметкой markdown
+      value: "## Thanks for taking the time to fill out this bug!"
   - type: checkboxes
-    id: идентификатор поля ввода
+    id: goodbye
     attributes:
-      label: подпись
-      description: описание
+      label: goodbye
+      description: goodbye
       options:
-      - label: флажок 1
-        required: true #флажок обязателен или нет
+      - label: goodbye
+        required: true 
