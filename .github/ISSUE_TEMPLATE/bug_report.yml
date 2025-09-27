@@ -32,7 +32,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: actual
+    id: additions
     attributes:
       label: "Дополнительные материалы"
       placeholder: "Прикрепите скриншоты и файлы здесь"
