@@ -1,34 +1,34 @@
 name: "bug repory"
-description: "issue to create bug report"
+description: "Bug report for github issues"
 title: "[Ошибка]:"
 labels: ["bug"]
 body:
   - type: textarea
-    id: rep_desc
+    id: description
     attributes:
       label: "Описание ошибки"
-      placeholder: "ошибка заключается в том что..."
+      placeholder: "Опишите ошибку"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: "Шаги воспроизведения"
-      placeholder: "что нужно сделать, чтобы вопспроизвести ошибку"
+      label: "Шаги воспроизведения ошибки"
+      placeholder: "Опишите шаги для воспроизведения ошибки"
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: "Ожидаемый результат"
-      placeholder: "что должно произойти"
+      placeholder: "Опишите что должно было произойит"
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
       label: "Фактический результат"
-      placeholder: "что происходит в итоге"
+      placeholder: "Опищите реальное поведение программы"
     validations:
       required: true
   - type: dropdown
@@ -38,18 +38,15 @@ body:
       options:
         - Windows 11
         - Windows 10
+        - MacOS
         - Ubuntu
-        - Debian
-        - macOS
-        - Android 16
-        - Android 15
-        - iOS 26
-        - iOS 18
-        - FreeBSD
+        - Unix
+        - Android 
+        - iOS 
     validations:
       required: true
   - type: dropdown
-    id: lowpriority
+    id: priority
     attributes:
       label: "Приоритет"
       options:
