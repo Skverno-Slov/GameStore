@@ -1,4 +1,4 @@
-name: "bug repory"
+name: "bug report"
 description: "Bug report for github issues"
 title: "[Ошибка]:"
 labels: ["bug"]
