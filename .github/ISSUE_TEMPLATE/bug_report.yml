@@ -31,6 +31,13 @@ body:
       placeholder: "Опищите реальное поведение программы"
     validations:
       required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Дополнительные материалы"
+      placeholder: "Прикрепите скриншоты и файлы здесь"
+    validations:
+      required: false
   - type: dropdown
     id: environment
     attributes:
